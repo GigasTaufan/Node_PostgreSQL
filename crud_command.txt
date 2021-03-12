@@ -1,0 +1,9 @@
+//  CreateAcara
+curl --data "id_metode=4&nama_acara=Contoh_Acara&id_bulan=2&tanggal_mulai=2019-02-02&tanggal_selesai=2019-02-04" http://localhost:3000/acara
+
+
+// DeleteAcara
+curl -X "DELETE" http://localhost:3000/acara/13
+
+// UpdateAcara
+curl -X PUT -d "id_metode=4" -d "nama_acara=UpdateAcara" -d "id_bulan=3" -d "tanggal_mulai=2019-03-14" -d "tanggal_selesai=2019-03-17" http://localhost:3000/acara/27
